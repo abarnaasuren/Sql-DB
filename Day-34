@@ -1,0 +1,90 @@
+--create a table for ZenClass
+
+Create table Student
+Student ID int identity(1,1) primary key,
+first-name (varchar(20)),
+last-name (varchar(20)),
+Email (varchar(50)),
+Phone (varchar(10)),
+Address (varchar(50)),
+City (varchar(20)),
+State (varchar(20)),
+Birthday (date),
+Gender (varchar(10)),
+Graduation-date (date),
+gpa (float)
+
+
+CREATE A TABLE Course
+Course ID int identity(1,1) primary key,
+Course-name (varchar(50)),
+Course-description (varchar(50)),
+Course-credits (int),
+Course-number (varchar(10)),
+Course-pre-req (varchar(50)),
+Course-offering-date (date),
+Course-offering-time (time),
+Course-offering-location (varchar(50)),
+Course-offering-days (varchar(50)),
+Course-offering-seats (int),
+Course-offering-seats-filled (int),
+Course-offering-seats-remaining (int) 
+
+CREATE A TABLE Instructor
+Instructor ID int identity(1,1) primary key,
+Instructor-name (varchar(50)),
+Instructor-email (varchar(50)),
+Instructor-phone (varchar(50)),
+Instructor-address (varchar(50)),
+Instructor-city (varchar(50)),
+Instructor-state (varchar(50)),
+Instructor-birthday (date),
+Instructor-gender (varchar(50)),
+Instructor-major (varchar(50)),
+Instructor-minor (varchar(50)),
+Instructor-graduation-date (date),
+Instructor-gpa (float)
+
+CREATE A TABLE SHEDULE
+Schedule ID int identity(1,1) primary key,
+Schedule-course-id (int),
+Schedule-instructor-id (int),
+Schedule-start-date (date),
+Schedule-start-time (time),
+Schedule-end-date (date),
+Schedule-end-time (time),
+Schedule-location (varchar(50)),
+Schedule-days (varchar(50)),
+Schedule-seats (int),
+Course-seats-filled (int),
+Course-seats-remaining (int)
+
+  create a table Payment
+  Payment ID int identity(1,1) primary key,
+  Payment-course-id (int),
+  Payment-student-id (int),
+  Payment-mode(varchar(20)),
+  Payment-amount (float),
+  Payment-date (date)
+
+
+  create a table attendence
+  Student ID int identity(1,1) primary key,
+Shedule-date (date),
+  Attendence-status (varchar(50)),
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

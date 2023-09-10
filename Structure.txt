@@ -1,0 +1,80 @@
+Create Table Student
+---------------
+
+* Student_id (Primary Key)
+* First_name
+* Last_name
+* Email
+* Phone_number
+* Date_of_birth
+* Address
+*City
+* State
+*Graduation Date
+*GPA
+
+
+Course Table:
+-------------
+*Course Id(Primary key)
+*Course-name
+*Course-description 
+*Course-credits 
+*Course-number 
+*Course-pre-req 
+*Course-offering-date
+*Course-offering-time 
+*Course-offering-location ,
+*Course-offering-days 
+*Course-offering-seats 
+*Course-offering-seats-filled 
+*Instructor ID(Foreign Key refernces Instructor)
+
+
+Instructors Table:
+------------------
+
+* Instructor_id (Primary Key)
+* First_name
+* Last_name
+* Email
+* Phone
+*Gender
+*DOB
+*Address
+*City
+*State
+
+
+
+
+Shedule Table:
+------------------
+
+* Schedule ID (primary key)
+*course-id (Foreign key refernce course),
+*Instructor-id (Foreign key refernce Instructor),
+*Schedule-start-date 
+*Schedule-start-time
+*Schedule-end-date 
+*Schedule-end-time 
+*Schedule-location 
+*Schedule-days 
+*Schedule-seats-filled 
+*Schedule-seats-remaining 
+
+
+create a table Payment
+----------------------
+*Payment ID  (primary key),
+*CourseId(Foreign key refernce Course)
+*Student-id (Foreign key refernce students),
+*Payment-mode,
+*Payment-amount ,
+*Payment-date 
+
+create a table attendence:
+----------------------------
+*Student ID (Foreign key refernce Student)
+*Shedule-date(Foreign key refernce Shedule)
+*Attendence-status (varchar(50)),
